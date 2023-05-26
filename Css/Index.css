@@ -4,9 +4,17 @@ body {
 
 .hero {
 	padding: 2% 0 0;
-	background-image: linear-gradient(135deg, #34495Eaa 0%, #1C2833aa 100%), url(imagenes/imagen1.jpg);
+	background-image: linear-gradient(135deg, #34495Eaa 0%, #1C2833aa 100%), url(Imagenes/ImagenFondo.jpg);
 	background-size: cover;
 	background-position: center;
+}
+
+.navbar{
+	justify-content: end !important;
+}
+
+.navbar-toggler{
+	border: 1px solid #fff !important;
 }
 
 .collapse{
@@ -84,8 +92,9 @@ body {
 }
 
 .imagen_sobre_mi {
-	width: 150px;
-	height: 150px;
+	max-width: 250px;
+	width: 100%;
+	height: 250px;
 	border: 1px solid #000000;
 	margin-bottom: 10px;
 	object-fit: cover;
@@ -284,7 +293,7 @@ footer{
 		margin: auto;
 		color: #fff;
 		text-align: center;
-		max-width: 60%;
+		max-width: 80%;
 	}
 
 	.figure_habilidaes_trabajo--left {
@@ -311,6 +320,41 @@ footer{
 @media(max-width: 1000px){
 	.hero {
 		height: auto;
+		padding: 0;
+	}
+
+	.navbar-toggler-icon{
+		width: 5vw !important;
+		height: 5vw !important;
+	}
+
+	.nav-item{
+		font-size: 3vw;
+	}
+
+	.titulo_hero {
+		font-size: 8vw;
+	}
+
+	.subtitulo_hero {
+		font-size: 6vw;
+	}
+
+	.boton_hero {
+		font-size: 3vw;
+	}
+
+	.collapse{
+		justify-content: start;
+	}
+
+	.contenedor_nav{
+		background: #283747;
+		opacity: 0.9;
+	}
+
+	.links{
+		padding: 20px 0 !important;
 	}
 
 	.contenedor_textos_hero {
@@ -321,7 +365,35 @@ footer{
 		display: none;
 	}
 
+	/* Sobre mi */
+
+	.titulo_sobre_mi {
+		font-size: 7vw;
+	}
+
+	.presentacion_sobre_mi {
+		font-size: 4vw;
+	}
+
+	.boton_sobre_mi {
+		font-size: 5vw;
+	}
+
+	/* Seccion habilidades y trabajo */
+
+	.titulo_habilidades_trabajo{
+		font-size: 7vw;
+	}
+
+	.parrafo_habilidades_trabajo{
+		font-size: 3vw;
+	}
+
 	/* Proyectos */
+
+	.titulo_proyectos{
+		font-size: 7vw;
+	}
 
 	.contenedor_proyectos {
 		grid-template-columns: 1fr 1fr ;
@@ -356,52 +428,3 @@ footer{
 	}
 }
 
-/* Tamaños de texto */
-
-@media (max-width: 767px) {
-	.titulo_hero {
-		font-size: 2rem;
-	}
-
-	.subtitulo_hero {
-		font-size: 1.5rem;
-	}
-
-	.boton_hero {
-		padding: 15px 30px;
-		font-size: 1.2rem;
-	}
-
-	.titulo_sobre_mi {
-		font-size: 2rem;
-	}
-
-	.presentacion_sobre_mi {
-		font-size: 1.2rem;
-	}
-
-	.boton_sobre_mi {
-		padding: 15px 30px;
-		font-size: 1.2rem;
-	}
-
-	.parrafo_habilidades_trabajo {
-		font-size: 1rem;
-	}
-
-	.titulo_proyectos {
-		font-size: 2rem;
-	}
-
-	.titulo_footer {
-		font-size: 2rem;
-	}
-
-	.titulo_red_social {
-		font-size: 1.8rem;
-	}
-
-	.subtitulo_red_social {
-		font-size: 1.5rem;
-	}
-}
